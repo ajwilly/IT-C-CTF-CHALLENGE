@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="display: block; text-align: center;">CTF Challenge</title>
+    <style>
+        title {
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: tan;"></body>
+    <h1>IT&C CTF Challenge</h1>
+
+    <div class="section">
+        <h2>Digital Bigfoot</h2>
+        <p><!-- Add challenge name here --></p>
+    </div>
+
+
+   
+
+    <div class="section">
+        <h2>Description</h2>
+        <p>Use your OSINT knowledge and the hints provided to answer the 5 questions and find the flag to solve the challenge!
+            For Reference, my name is AJ Willardson.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Question 2:</h2>
+        <ul>
+            <li>How many siblings do I have? <i>
+                <input type="text" name="question1" placeholder="Enter your answer here" id="question1" onkeypress="if(event.key === 'Enter') checkAnswer();">
+                <button onclick="checkAnswer()">Submit</button>
+                <script>
+                    function checkAnswer() {
+                        const answer = document.getElementById('question1').value.trim().toLowerCase();
+                        if (answer === '4') {
+                            window.location.href = 'file:///Users/ajwillardson/Desktop/School/IT&C%20101/CTF%20Challenge%20Files/Question3.html'; // Replace with the actual next page URL
+                        } else {
+                            alert('Incorrect answer. Please try again.');
+                        }
+                    }
+                </script>
+            
+        </ul>
+    </div>
+
+    
+
+    <div class="section">
+        <h2>Flag Format</h2>
+        <p>CTF{#insert flag here}</p>
+    </div>
+</body>
+</html>
